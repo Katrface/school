@@ -1,8 +1,8 @@
 import styles from "./stylesDesktop.css";
-import TextLink from "../TextLink";
+import TextLink from "../components/TextLink";
 import container from "../config/container.css";
 
-const NavigationDesctop = (props) => {
+const NavigationDesktop = (props) => {
     const links = props.links;
 
     const navLinks = links.map((linkObj) => {
@@ -19,4 +19,4 @@ const NavigationDesctop = (props) => {
     );
 };
 
-export default NavigationDesctop;
+export default NavigationDesktop;

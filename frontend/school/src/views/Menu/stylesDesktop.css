@@ -1,0 +1,62 @@
+footer {
+    --optional-text-color: #878a8f;
+    --separator-color: #e7e8e9;
+}
+
+footer {
+    height: 200px;
+}
+
+footer > .separator {
+    margin: 70px 0;
+}
+
+.separator {
+    background-color: var(--separator-color);
+    width: 100%;
+    height: 1px;
+}
+
+footer > .school-name {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: var(--optional-text-color);
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 80px;
+    word-wrap: break-word;
+}
+
+.menu > ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -32px;
+
+
+}
+
+.menu > ul > li {
+    margin-right: 32px;
+    margin-bottom: 50px;
+
+    width: 368px;
+}
+
+@media (max-width: 1279px) {
+    .menu > ul {
+        margin-right: -23px;
+    }
+
+    .menu > ul > li {
+        margin-right: 23px;
+        margin-bottom: 22px;
+
+        width: 304px;
+    }
+}
+
+.menu > a {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}

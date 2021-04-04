@@ -1,0 +1,74 @@
+.m-menu {
+    --optional-text-color: #878a8f;
+    --separator-color: #e7e8e9;
+}
+
+.m-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    width: 100%;
+    height: 100vh;
+}
+
+/*.m-menu:after {*/
+/*    content: '';*/
+/*    height: 48px;*/
+/*    width: 100%;*/
+/*}*/
+
+.m-menu__head {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    margin: 20px 20px 15px;
+}
+
+.m-menu__head:after,
+.m-menu__row:after{
+    position: absolute;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    background-color: var(--separator-color);
+    width: 100%;
+}
+
+.m-menu__logo {
+    font-size: 18px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.m-menu__icon {
+
+}
+
+.m-menu__eye {
+
+}
+/*.m-menu > ul > li > a {*/
+/*    height: 48px;*/
+/*}*/
+
+.m-menu__row {
+    display: flex;
+    position: relative;
+    margin: 0 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    font-size: 16px;
+    letter-spacing: 0.02em;
+}
+
+.m-menu__school-name {
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: var(--optional-text-color);
+    margin: 0 30px 20px;
+    bottom: 48px;
+}

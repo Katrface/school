@@ -1,0 +1,11 @@
+#hidden-menu {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+#hidden-menu.active{
+    left: 0;
+}

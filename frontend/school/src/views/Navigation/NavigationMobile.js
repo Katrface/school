@@ -1,13 +1,15 @@
 import styles from "./stylesMobile.css";
 import icons from "../config/icons/icons.css";
+import ButtonHiddenMenuMobile from "../Menu/ButtonHiddenMenu/ButtonHiddenMenuMobile";
 
 const NavigationMobile = (props) => {
     const links = props.links;
+    const changeMenuViewMode = props.changeMenuViewMode;
 
     const bottomMenuCells = links.map((linkObj) => {
         const className = `icon ${linkObj.iconClass} bottom-menu__icon`;
         return (
-            <div key={linkObj.title} className="bottom-menu__cell">
+            <div key={linkObj.name} className="bottom-menu__cell">
                 <a href={linkObj.link}>
                     <i className={className}></i>
                 </a>
@@ -16,7 +18,12 @@ const NavigationMobile = (props) => {
     });
 
     return (
-        <nav className="bottom-menu bottom-menu__fixed">{bottomMenuCells}</nav>
+        <nav className="bottom-menu bottom-menu__fixed">
+            {bottomMenuCells}
+            <div className="bottom-menu__cell">
+                <ButtonHiddenMenuMobile changeMenuViewMode={changeMenuViewMode}/>
+            </div>
+        </nav>
     );
 };
 

@@ -1,11 +1,11 @@
 import React from "react";
 
-import AdaptiveDesign from "../../services/adaptiveDisign";
+import AdaptiveDesign from "../../../services/adaptiveDisign";
 
-const DesktopLazy = React.lazy(() => import("./NavigationDesktop"));
-const MobileLazy = React.lazy(() => import("./NavigationMobile"));
+const DesktopLazy = React.lazy(() => import("./HiddenMenuDesktop"));
+const MobileLazy = React.lazy(() => import("./HiddenMenuMobile"));
 
-const Navigation = (props) => {
+const HiddenMenu = (props) => {
     const adaptiveDesignMode = props.adaptiveDisignMode;
 
     function getComponent() {
@@ -13,13 +13,13 @@ const Navigation = (props) => {
         if (adaptiveDesignMode === AdaptiveDesign.MOBILE) return MobileLazy;
     }
 
-    const NavigationComponent = getComponent();
+    const MenuComponent = getComponent();
 
     return (
         <React.Suspense fallback={<div>Loading</div>}>
-            <NavigationComponent {...props} />
+            <MenuComponent {...props}/>
         </React.Suspense>
     );
 };
 
-export default Navigation;
+export default HiddenMenu;

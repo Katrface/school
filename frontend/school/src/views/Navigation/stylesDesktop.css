@@ -1,9 +1,15 @@
 .navigation {
+    --main-link-color: #5181b8;
     display: flex;
 }
 
 .navigation > a {
     margin-right: 92px;
+
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: var(--main-link-color);
+    word-wrap: break-word;
 }
 
 .logo {

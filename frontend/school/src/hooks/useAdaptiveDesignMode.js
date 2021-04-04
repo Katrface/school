@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import AdaptiveDesign from "../service/adaptiveDisign";
+import AdaptiveDesign from "../services/adaptiveDisign";
 
 export default function useAdaptiveDesignMode(
-    initialMode = AdaptiveDesign.DESKTOP
+    initialMode = AdaptiveDesign.getMode()
 ) {
     const [mode, setMode] = useState(initialMode);
 
