@@ -1,0 +1,16 @@
+*,
+*:before,
+*:after {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+}
+
+:root {
+    --media-width-smallest: 479px;
+    --mediu-width-small: 767px;
+    --mediu-width-medium: 999px;
+    --mediu-width-large: 1279px;
+
+    --main-text-color: #0f141e;
+}

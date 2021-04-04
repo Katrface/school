@@ -1,0 +1,28 @@
+.icon {
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icon.icon-menu {
+    background-image: url("/src/views/config/icons/svg/icon-menu.svg");
+}
+
+.icon.icon-menu_active {
+    background-image: url("/src/views/config/icons/svg/icon-menu-active.svg");
+}
+
+.icon.icon-feed {
+    background-image: url("/src/views/config/icons/svg/icon-feed.svg");
+}
+
+.icon.icon-feed_active {
+    background-image: url("/src/views/config/icons/svg/icon-feed-active.svg");
+}
+
+.icon.icon-notification {
+    background-image: url("/src/views/config/icons/svg/icon-notification.svg");
+}
+.icon.icon-notification_active {
+    background-image: url("/src/views/config/icons/svg/icon-notification-active.svg");
+}

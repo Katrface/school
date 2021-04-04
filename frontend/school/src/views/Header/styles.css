@@ -1,0 +1,11 @@
+.logo {
+    color: var(--main-text-color);
+    font-size: 64px;
+    letter-spacing: 0.04em;
+    margin-top: 33px;
+}
+
+.header__nav {
+    margin-top: 37px;
+    margin-bottom: 38px;
+}
