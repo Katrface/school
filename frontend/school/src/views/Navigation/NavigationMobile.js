@@ -2,29 +2,45 @@ import styles from "./stylesMobile.css";
 import icons from "../config/icons/icons.css";
 import ButtonHiddenMenuMobile from "../Menu/ButtonHiddenMenu/ButtonHiddenMenuMobile";
 
+import {NavLink} from "react-router-dom";
+
 const NavigationMobile = (props) => {
     const links = props.links;
     const menuViewMode = props.menuViewMode;
 
     const bottomMenuCells = links.map((linkObj) => {
-        const className = `icon ${linkObj.iconClass} bottom-menu__icon`;
+        const iconClassName = linkObj.iconClass + " bottom-menu__icon";
         return (
-            <div key={linkObj.name} className="bottom-menu__cell">
-                <a href={linkObj.link}>
-                    <i className={className}></i>
-                </a>
-            </div>
+            <NavigationMobileCell key={linkObj.name}>
+                <NavLink
+                    exact to={linkObj.link}
+                    isActive={(match, location) => {
+                        return !menuViewMode.isOpen && (location.pathname === linkObj.link);
+                    }}
+                    activeClassName="active"
+                >
+                    <i className={iconClassName}></i>
+                </NavLink>
+            </NavigationMobileCell>
         );
     });
 
     return (
         <nav className="bottom-menu bottom-menu__fixed">
             {bottomMenuCells}
-            <div className="bottom-menu__cell">
+            <NavigationMobileCell>
                 <ButtonHiddenMenuMobile menuViewMode={menuViewMode}/>
-            </div>
+            </NavigationMobileCell>
         </nav>
     );
 };
 
 export default NavigationMobile;
+
+const NavigationMobileCell = (props) => {
+    return(
+        <div className="bottom-menu__cell">
+            {props.children}
+        </div>
+    )
+}

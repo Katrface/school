@@ -9,7 +9,7 @@ const getNavigationLinks = () => {
         {
             name: "О школе",
             link: "/about",
-            iconClass: "icon icon-feed_active"
+            iconClass: "icon icon-feed"
         }
     ];
 

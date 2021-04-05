@@ -23,7 +23,7 @@
     width: 100%;
 }
 
-.bottom-menu__cell > * {
+.bottom-menu__cell > a, .bottom-menu__cell > button{
     height: 100%;
     width: 100%;
 
@@ -34,6 +34,10 @@
 }
 
 .bottom-menu__icon {
-    height: 30px;
-    width: 30px;
+    height: 28px;
+    width: 28px;
+    fill: #99a2ad;
+}
+
+a.active > .bottom-menu__icon {
 }

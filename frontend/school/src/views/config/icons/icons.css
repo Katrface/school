@@ -1,5 +1,5 @@
 .icon {
-    background-position: left top;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -7,8 +7,7 @@
 .icon.icon-menu {
     background-image: url("/src/views/config/icons/svg/icon-menu.svg");
 }
-
-.icon.icon-menu_active {
+.active > .icon.icon-menu {
     background-image: url("/src/views/config/icons/svg/icon-menu-active.svg");
 }
 
@@ -16,13 +15,18 @@
     background-image: url("/src/views/config/icons/svg/icon-feed.svg");
 }
 
-.icon.icon-feed_active {
+.active > .icon.icon-feed {
     background-image: url("/src/views/config/icons/svg/icon-feed-active.svg");
 }
 
 .icon.icon-notification {
     background-image: url("/src/views/config/icons/svg/icon-notification.svg");
 }
-.icon.icon-notification_active {
+
+.active > .icon.icon-notification {
     background-image: url("/src/views/config/icons/svg/icon-notification-active.svg");
+}
+
+.icon.icon-eye {
+    background-image: url("/src/views/config/icons/svg/icon-eye.svg");
 }

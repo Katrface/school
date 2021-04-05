@@ -4,10 +4,10 @@ import React from "react";
 //bad component
 const ButtonHiddenMenuMobile = (props) => {
     const menuViewMode = props.menuViewMode;
-    const classIcon = menuViewMode.isOpen ? "icon-menu_active" : "icon-menu";
+    const classActive = menuViewMode.isOpen ? "active" : "";
     return (
-        <button onClick={menuViewMode.changeMode}>
-            <i className={`icon ${classIcon} bottom-menu__icon`}></i>
+        <button className={classActive} onClick={menuViewMode.changeMode}>
+            <i className={`icon icon-menu bottom-menu__icon`}></i>
         </button>
     );
 };

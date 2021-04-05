@@ -6,6 +6,7 @@ import styles from "./styles.css";
 import ArticleCardList from "../components/ArticleCardList";
 import Navigation from "../Navigation";
 import Menu from "../Menu";
+import {Route} from "react-router-dom";
 
 import data from "../../data/articleCards";
 import useAdaptiveDesignMode from "../../hooks/useAdaptiveDesignMode";
@@ -22,23 +23,23 @@ function SchoolApp() {
 
     const {flag, changeFlag} = useFlag();
 
+
+    //TODO при адаптиве перерендеривается все, решается добавлением общего хранилища (redux)
     return (
         <React.Fragment>
-            <Navigation.NavigationCombine
-                adaptiveDisignMode={adaptiveDesignMode.mode}
-                links={navLinks}
-                menuViewMode={{isOpen: flag, changeMode: changeFlag}}
-            />
-            {/* <Main/>
-            <ButtonHiddenMenu/> */}
-            <div className="container">
-                <ArticleCardList articleCards={articleCards}></ArticleCardList>
-            </div>
-            <Menu.Hidden.HiddenMenuCombine
-                adaptiveDisignMode={adaptiveDesignMode.mode}
-                links={menuLinks}
-                isOpen={flag}
-            />
+                <Navigation.NavigationCombine
+                    adaptiveDisignMode={adaptiveDesignMode.mode}
+                    links={navLinks}
+                    menuViewMode={{isOpen: flag, changeMode: changeFlag}}
+                />
+                <div className="container">
+                    <ArticleCardList articleCards={articleCards}></ArticleCardList>
+                </div>
+                <Menu.Hidden.HiddenMenuCombine
+                    adaptiveDisignMode={adaptiveDesignMode.mode}
+                    links={menuLinks}
+                    isOpen={flag}
+                />
         </React.Fragment>
     );
 }
