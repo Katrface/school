@@ -3,19 +3,17 @@ import React from "react";
 import clearSCC from "../config/clear.css";
 import styles from "./styles.css";
 
-import ArticleCardList from "../components/ArticleCardList";
 import Navigation from "../Navigation";
 import Menu from "../Menu";
-import {Route} from "react-router-dom";
+import Main from "../Main";
 
-import data from "../../data/articleCards";
 import useAdaptiveDesignMode from "../../hooks/useAdaptiveDesignMode";
 import navigationService from "../../services/navigation";
 import menuService from "../../services/menu";
 import useFlag from "../../hooks/useFlag";
 
+
 function SchoolApp() {
-    const articleCards = data.articleCards;
     const adaptiveDesignMode = useAdaptiveDesignMode();
 
     const navLinks = navigationService.getNavigationLinks();
@@ -32,9 +30,7 @@ function SchoolApp() {
                     links={navLinks}
                     menuViewMode={{isOpen: flag, changeMode: changeFlag}}
                 />
-                <div className="container">
-                    <ArticleCardList articleCards={articleCards}></ArticleCardList>
-                </div>
+                <Main adaptiveDisignMode={adaptiveDesignMode.mode}></Main>
                 <Menu.Hidden.HiddenMenuCombine
                     adaptiveDisignMode={adaptiveDesignMode.mode}
                     links={menuLinks}

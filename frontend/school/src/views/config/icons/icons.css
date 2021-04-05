@@ -27,6 +27,14 @@
     background-image: url("/src/views/config/icons/svg/icon-notification-active.svg");
 }
 
+.icon.icon-services {
+    background-image: url("/src/views/config/icons/svg/icon-services.svg");
+}
+
+.active > .icon.icon-services {
+    background-image: url("/src/views/config/icons/svg/icon-services-active.svg");
+}
+
 .icon.icon-eye {
     background-image: url("/src/views/config/icons/svg/icon-eye.svg");
 }
