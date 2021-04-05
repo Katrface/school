@@ -4,7 +4,7 @@ import ButtonHiddenMenuMobile from "../Menu/ButtonHiddenMenu/ButtonHiddenMenuMob
 
 const NavigationMobile = (props) => {
     const links = props.links;
-    const changeMenuViewMode = props.changeMenuViewMode;
+    const menuViewMode = props.menuViewMode;
 
     const bottomMenuCells = links.map((linkObj) => {
         const className = `icon ${linkObj.iconClass} bottom-menu__icon`;
@@ -21,7 +21,7 @@ const NavigationMobile = (props) => {
         <nav className="bottom-menu bottom-menu__fixed">
             {bottomMenuCells}
             <div className="bottom-menu__cell">
-                <ButtonHiddenMenuMobile changeMenuViewMode={changeMenuViewMode}/>
+                <ButtonHiddenMenuMobile menuViewMode={menuViewMode}/>
             </div>
         </nav>
     );

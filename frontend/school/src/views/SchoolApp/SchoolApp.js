@@ -27,7 +27,7 @@ function SchoolApp() {
             <Navigation.NavigationCombine
                 adaptiveDisignMode={adaptiveDesignMode.mode}
                 links={navLinks}
-                changeMenuViewMode={changeFlag}
+                menuViewMode={{isOpen: flag, changeMode: changeFlag}}
             />
             {/* <Main/>
             <ButtonHiddenMenu/> */}

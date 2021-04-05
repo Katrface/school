@@ -12,12 +12,6 @@
     height: 100vh;
 }
 
-/*.m-menu:after {*/
-/*    content: '';*/
-/*    height: 48px;*/
-/*    width: 100%;*/
-/*}*/
-
 .m-menu__head {
     display: flex;
     justify-content: space-between;
@@ -67,6 +61,8 @@
 .m-menu__school-name {
     position: absolute;
     font-size: 14px;
+    line-height: 20px;
+    text-align: center;
     letter-spacing: 0.02em;
     color: var(--optional-text-color);
     margin: 0 30px 20px;

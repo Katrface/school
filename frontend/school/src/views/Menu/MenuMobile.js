@@ -1,6 +1,7 @@
 import styles from "./stylesMobile.css";
 import icons from "../config/icons/icons.css";
-import TextLink from "../components/TextLink/TextLink";
+
+//TODO скролинг при большом количестве ссылок (фиксированное название школы) + всплытие события
 
 const MenuMobile = (props) => {
     const links = props.links;
