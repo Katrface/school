@@ -6,6 +6,8 @@ import News from "./News";
 import newsServices from "../../services/news";
 import styles from "./styles.css";
 
+import MarkdownComponent from "./MarkdownComponent";
+
 const Main = (props) => {
     const adaptiveDesignMode = props.adaptiveDesignMode;
 
@@ -43,6 +45,12 @@ const Main = (props) => {
                     <div>About</div>
                     {/*<About></About>*/}
                 </Route>
+
+                <Route path={staticRouter.article.path}>
+                    <MarkdownComponent content={newsServices.getArticleByLinkName()}/>
+                    {/*<About></About>*/}
+                </Route>
+
                 <Redirect push to={staticRouter.main.path}/>
             </Switch>
         </div>

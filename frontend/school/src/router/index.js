@@ -3,17 +3,18 @@ const staticRouter = {
         path: "/"
     },
     news: {
-        path: "/news",
-        element: "/news/:id"
+        path: "/news"
     },
     events: {
         path: "/events",
-        element: "/news/:id"
     },
     about: {
         path: "/about",
-        element: "/news/:id"
     },
+    article: {
+        path: "/@:id"
+    }
+
 }
 
 export default staticRouter;
