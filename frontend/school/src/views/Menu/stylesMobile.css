@@ -13,14 +13,9 @@
 }
 
 .m-menu__head {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-
-    margin: 20px 20px 15px;
+    margin-bottom: 20px;
 }
 
-.m-menu__head:after,
 .m-menu__row:after{
     position: absolute;
     bottom: 0;
@@ -28,17 +23,6 @@
     height: 1px;
     background-color: var(--separator-color);
     width: 100%;
-}
-
-.m-menu__logo {
-    font-size: 18px;
-    margin-left: 10px;
-    margin-bottom: 20px;
-}
-
-.m-menu__icon, .m-menu__eye {
-    width:40px;
-    height: 40px;
 }
 
 .m-menu__row {

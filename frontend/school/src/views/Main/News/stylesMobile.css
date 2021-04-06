@@ -1,9 +1,8 @@
 .m-news {
     display: flex;
     flex-direction: column;
-    padding-bottom: 56px;
 }
 
 .m-news > .mobile-head {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }

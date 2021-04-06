@@ -1,5 +1,6 @@
 import styles from "./stylesMobile.css";
 import icons from "../config/icons/icons.css";
+import MobileHead from "../components/MobileHead";
 
 //TODO скролинг при большом количестве ссылок (фиксированное название школы) + всплытие события
 
@@ -22,8 +23,7 @@ const MenuMobile = (props) => {
     return (
         <div className="m-menu">
             <div className="m-menu__head">
-                <div className="m-menu__logo">школа 27</div>
-                <div className="m-menu__eye"><i className="icon icon-eye m-menu__icon"/></div>
+                <MobileHead title="школа 27"/>
             </div>
             <ul>
                 {menuLinkList}
