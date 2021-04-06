@@ -30,7 +30,7 @@ function SchoolApp() {
                     links={navLinks}
                     menuViewMode={{isOpen: flag, changeMode: changeFlag}}
                 />
-                <Main adaptiveDisignMode={adaptiveDesignMode.mode}></Main>
+                <Main adaptiveDesignMode={adaptiveDesignMode.mode}></Main>
                 <Menu.Hidden.HiddenMenuCombine
                     adaptiveDisignMode={adaptiveDesignMode.mode}
                     links={menuLinks}

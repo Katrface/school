@@ -29,6 +29,10 @@ const articleCards = [
     }
 ];
 
+const getArticleCards = () => {
+    return articleCards;
+}
+
 export default {
-    articleCards
+    getArticleCards
 };
