@@ -13,4 +13,15 @@
     --mediu-width-large: 1279px;
 
     --main-text-color: #0f141e;
+    --main-link-color: #5181b8;
+    --main-background-color: #FFF;
+
+    --optional-text-color: #878a8f;
+    --separator-color: #e7e8e9;
+
+    --bottom-menu-background-color: #f9f9f9;
+    --bottom-menu-shadow: rgba(0, 0, 0, 0.06);
+    
+    --card-shading-screen-color: rgba(15, 20, 30, 0.4);
+    --card-title-color: #fff;
 }

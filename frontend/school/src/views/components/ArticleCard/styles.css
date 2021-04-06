@@ -1,14 +1,9 @@
 .article-card {
-    --shading-screen-color: rgba(15, 20, 30, 0.4);
-    --card-title-color: #fff;
-}
-
-.article-card {
     position: relative;
     width: 368px;
     height: 207px;
     border-radius: 4px;
-    background-color: var(--shading-screen-color);
+    background-color: var(--card-shading-screen-color);
 }
 
 .article-card__title {
@@ -24,7 +19,7 @@
 
 .article-card__img,
 .article-card__dark {
-    background-color: var(--shading-screen-color);
+    background-color: var(--card-shading-screen-color);
     position: absolute;
     height: 100%;
     width: 100%;

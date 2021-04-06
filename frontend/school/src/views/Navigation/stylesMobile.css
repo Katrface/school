@@ -1,12 +1,8 @@
 .bottom-menu {
-    --bottom-menu-background-color: #f9f9f9;
-}
-
-.bottom-menu {
     display: flex;
     height: 48px;
     background-color: var(--bottom-menu-background-color);
-    box-shadow: 0 -2px 6px 2px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 -2px 6px 2px var(--bottom-menu-shadow);
 }
 
 .bottom-menu__fixed {
@@ -36,8 +32,4 @@
 .bottom-menu__icon {
     height: 28px;
     width: 28px;
-    fill: #99a2ad;
-}
-
-a.active > .bottom-menu__icon {
 }

@@ -1,13 +1,7 @@
-:root {
-    --optional-text-color: #878a8f;
-    --separator-color: #e7e8e9;
-}
-
 .m-menu {
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: #FFF;
     width: 100%;
     min-height: 100vh;
 }
