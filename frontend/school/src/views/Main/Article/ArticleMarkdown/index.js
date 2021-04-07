@@ -1,7 +1,7 @@
 import { Remarkable } from 'remarkable';
 import styles from "./markdownGitHubStyles.css"
 
-const MarkdownComponent = (props) => {
+const ArticleMarkdown = (props) => {
     const md = new Remarkable();
 
     const markdownContent = props.content;
@@ -16,4 +16,4 @@ const MarkdownComponent = (props) => {
 
 }
 
-export default MarkdownComponent
+export default ArticleMarkdown

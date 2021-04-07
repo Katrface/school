@@ -1,12 +1,11 @@
 import React from "react";
-import {Redirect, Route, Switch} from "react-router-dom";
+import {Redirect, Route, Switch, useParams} from "react-router-dom";
 import staticRouter from "../../router";
 import AdaptiveDesign from "../../services/adaptiveDisign";
 import News from "./News";
 import newsServices from "../../services/news";
+import Article from "./Article";
 import styles from "./styles.css";
-
-import MarkdownComponent from "./MarkdownComponent";
 
 const Main = (props) => {
     const adaptiveDesignMode = props.adaptiveDesignMode;
@@ -47,7 +46,7 @@ const Main = (props) => {
                 </Route>
 
                 <Route path={staticRouter.article.path}>
-                    <MarkdownComponent content={newsServices.getArticleByLinkName()}/>
+                    <Article.ArticleRoute/>
                     {/*<About></About>*/}
                 </Route>
 

@@ -1,5 +1,5 @@
 const MOBILE = "MOBILE";
-const DESKTOP = "DESCTOP";
+const DESKTOP = "DESKTOP";
 
 function getMode() {
     if (window.innerWidth < 1000) {
