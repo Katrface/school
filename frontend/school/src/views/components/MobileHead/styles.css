@@ -1,10 +1,15 @@
 .mobile-head {
-    margin: 0 15px;
+    padding: 45px;
+}
+
+@media (max-width: 767px) {
+    .mobile-head {
+        padding: 15px;
+    }
 }
 
 .mobile-head__title {
     padding-bottom: .3em;
-    margin-top: 0.48em;
     word-wrap: break-word;
     font-size: 2em;
     font-weight: 600;
