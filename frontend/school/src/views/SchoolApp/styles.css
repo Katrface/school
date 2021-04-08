@@ -2,8 +2,7 @@
 *:before,
 *:after {
     font-family: apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;;
-    /*font-style: normal;*/
-    /*font-weight: normal;*/
+    font-size: 16px;
 }
 
 :root {
@@ -13,7 +12,6 @@
     --mediu-width-large: 1279px;
 
     --main-text-color: #0f141e;
-    --main-link-color: #5181b8;
     --main-background-color: #FFF;
 
     --optional-text-color: #878a8f;
@@ -24,4 +22,8 @@
 
     --card-shading-screen-color: rgba(15, 20, 30, 0.4);
     --card-title-color: #fff;
+
+    --main-accented-color: #2975cc;
+    --event-card-background-color: #EBEDF0;
+    --event-card-title-color: rgba(15, 20, 30, 0.8);
 }
