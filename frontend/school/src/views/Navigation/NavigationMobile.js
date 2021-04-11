@@ -26,7 +26,7 @@ const NavigationMobile = (props) => {
                     }}
                     activeClassName="active"
                 >
-                    <i className={iconClassName}></i>
+                    <i className={iconClassName}/>
                 </NavLink>
             </NavigationMobileCell>
         );

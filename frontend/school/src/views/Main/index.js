@@ -4,8 +4,11 @@ import staticRouter from "../../router";
 import AdaptiveDesign from "../../services/adaptiveDisign";
 import News from "./News";
 import newsServices from "../../services/news";
+import eventService from "../../services/events";
+
 import Article from "./Article";
 import styles from "./styles.css";
+import Events from "./Events/Events";
 
 const Main = (props) => {
     const adaptiveDesignMode = props.adaptiveDesignMode;
@@ -15,7 +18,8 @@ const Main = (props) => {
     }
 
     const redirectMainInMobile = getRedirectIfMobile();
-    const newsCards = newsServices.getArticleCards();
+    const newsCards = newsServices.getNewsCards();
+    const eventCards = eventService.getEventCards();
 
     function getMainClassNameByAdaptive(){
         if (adaptiveDesignMode === AdaptiveDesign.DESKTOP) return "main";
@@ -37,8 +41,7 @@ const Main = (props) => {
                                       newsCards={newsCards}/>
                 </Route>
                 <Route exact path={staticRouter.events.path}>
-                    <div>Events</div>
-                    {/*<Events></Events>*/}
+                    <Events eventCards={eventCards}/>
                 </Route>
                 <Route exact path={staticRouter.about.path}>
                     <div>About</div>

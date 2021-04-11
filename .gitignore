@@ -2,6 +2,8 @@ backend/venv
 backend/get_pip.py
 backend/school/.idea
 
+*package-lock*
+
 frontend/school-staff
 frontend/layout
 
