@@ -1,14 +1,14 @@
 export const textLinks = [
     {
         name: "Сведения об образовательной организации",
-        link: "/events",
+        link: "/@stub",
     },
     {
         name: "Министерство образования",
-        link: "/events",
+        link: "/@stub",
     },
     {
         name: "Контактная информация",
-        link: "/about",
+        link: "/@stub",
     },
 ];

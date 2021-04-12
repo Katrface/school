@@ -10,7 +10,7 @@ const MenuMobile = (props) => {
     const menuLinkList = links.map((linkObj) => {
         return (
             <li key={linkObj.name}>
-                <a href={linkObj.link}>
+                <a href={"/#" + linkObj.link}>
                     <div className="m-menu__row">
                         {linkObj.name}
                     </div>
