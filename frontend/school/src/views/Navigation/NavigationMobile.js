@@ -1,11 +1,11 @@
 import styles from "./stylesMobile.css";
-import icons from "../config/icons/icons.css";
-import ButtonHiddenMenuMobile from "../Menu/ButtonHiddenMenu/ButtonHiddenMenuMobile";
 
 import {NavLink} from "react-router-dom";
+import React from "react";
 
 const NavigationMobile = (props) => {
-    const links = props.links;
+    const links = props.nav.links;
+    const menuCell = props.nav.menuCell;
     const menuViewMode = props.menuViewMode;
 
     const closeMenu = () => {
@@ -14,30 +14,27 @@ const NavigationMobile = (props) => {
         }
     }
 
+    // TODO безопасность
     const bottomMenuCells = links.map((linkObj) => {
-        const iconClassName = linkObj.iconClass + " bottom-menu__icon";
         return (
-            <NavigationMobileCell key={linkObj.name}>
-                <NavLink
-                    onClick={closeMenu}
-                    exact to={linkObj.link}
-                    isActive={(match, location) => {
-                        return !menuViewMode.isOpen && (location.pathname === linkObj.link);
-                    }}
-                    activeClassName="active"
-                >
-                    <i className={iconClassName}/>
-                </NavLink>
-            </NavigationMobileCell>
+            <NavLink
+                onClick={closeMenu}
+                exact to={linkObj.link}
+                isActive={(match, location) => {
+                    return !menuViewMode.isOpen && (location.pathname === linkObj.link);
+                }}
+                activeClassName="bottom-menu__cell__active">
+                <NavigationMobileCell cell={linkObj} />
+            </NavLink>
         );
     });
 
     return (
         <nav className="bottom-menu bottom-menu__fixed">
             {bottomMenuCells}
-            <NavigationMobileCell>
-                <ButtonHiddenMenuMobile menuViewMode={menuViewMode}/>
-            </NavigationMobileCell>
+            <ButtonHiddenMenuMobile menuViewMode={menuViewMode}>
+                <NavigationMobileCell cell={menuCell}/>
+            </ButtonHiddenMenuMobile>
         </nav>
     );
 };
@@ -45,9 +42,22 @@ const NavigationMobile = (props) => {
 export default NavigationMobile;
 
 const NavigationMobileCell = (props) => {
+    const cell = props.cell;
+
     return(
         <div className="bottom-menu__cell">
-            {props.children}
+            <div className="bottom-menu__cell__icon" dangerouslySetInnerHTML={{ __html: cell.iconSVG }}/>
+            <div className="bottom-menu__cell__name">{cell.name}</div>
         </div>
     )
 }
+
+const ButtonHiddenMenuMobile = (props) => {
+    const menuViewMode = props.menuViewMode;
+    const classActive = menuViewMode.isOpen ? "bottom-menu__cell__active" : "";
+    return (
+        <button className={classActive} onClick={menuViewMode.changeMode}>
+            {props.children}
+        </button>
+    );
+};

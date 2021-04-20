@@ -20,7 +20,7 @@ export default function useAdaptiveDesignMode(
     useEffect(() => {
         onSubscribe();
         return () => offSubscribe();
-    }, []);
+    }, [window.innerWidth]);
 
     return {
         mode

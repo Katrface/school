@@ -1,4 +1,78 @@
-const stub = "# Заглушка";
+const exposition = `
+![](https://sun9-63.userapi.com/impg/A-3AtLiqfFavy0AHOHo5y1RRmFJ1pEwbN6EF-Q/hipvmcICeyQ.jpg?size=1200x1600&quality=96&sign=34e1325abe4cf4ada8739619e4c9689a&type=album)
+![](https://sun9-5.userapi.com/impg/lKZYdHpayL0Rs5YsuJtVksYZl0_v4rl9Lpsrkg/ekTKf6xUpvI.jpg?size=1200x1600&quality=96&sign=3157f7cb4ee4bd0831e1eb63a9d6d2c0&type=album)
+
+&ensp;
+---
+&ensp;
+
+![](https://sun9-33.userapi.com/impg/-XPTqnrosrN_6c9Vz27AIu-Wym7-o4mFE0sd6g/DVSgHasIlAw.jpg?size=1200x1600&quality=96&sign=b2b6481e128e3a8d1185c5ce3158c671&type=album)
+![](https://sun9-68.userapi.com/impg/42YRjTGhNYGvqeLHWebjfYe4kDJtU-IHbPA0FQ/Fc5JPRmwW-s.jpg?size=1200x1600&quality=96&sign=24269f05d0848db765fbe4be719a87d8&type=album)
+![](https://sun9-19.userapi.com/impg/sIXLQ3tcIyFO_JxY15KbpXzUwQnxJrdbvxmDYg/4oY1Ex4BKNQ.jpg?size=1200x1600&quality=96&sign=c69e217c210e25942dc8a89cfebcaa0f&type=album)
+
+&ensp;
+---
+&ensp;
+
+![](https://sun9-42.userapi.com/impg/Q4qejOOwPHADj_jKozfCyQKE-_w2r2YXHQloIg/p40yqCYxpMg.jpg?size=1200x1600&quality=96&sign=948a5c245bea09041a8ff8e14ad263f3&type=album)
+![](https://sun9-40.userapi.com/impg/9fzOFr4WhR5Vr2a98aY-s5H9pfq_BWy2t33syQ/Eoq-7h0g93M.jpg?size=1200x1600&quality=96&sign=aafbb51f466ff8767d8acda66a202410&type=album)
+![](https://sun9-47.userapi.com/impg/Ypywug9YJFDJr0PUc8GmuEHKCJ-DfnFQfpmXkg/ns29Zs7FxN4.jpg?size=1200x1600&quality=96&sign=c605355c4bd756e1e7371885c2607e0a&type=album)
+
+&ensp;
+---
+&ensp;
+
+![](https://sun9-26.userapi.com/impg/SG9E3GiPEtV5sUe6fOCLiQMatAx_Kj6ER2B1FA/3c_CIo2xmyI.jpg?size=1200x1600&quality=96&sign=cd5c4713cff83d096783e1876fca176b&type=album)
+![](https://sun9-46.userapi.com/impg/t1PT4WUpK6IJ20uJZFeajuH56u0c5usVNOF2BQ/YlmADSweRBQ.jpg?size=1600x1200&quality=96&sign=3bbc1b3fc711d7b99b720e81ae688e69&type=album)
+![](https://sun9-57.userapi.com/impg/0fmDi8lqMk4Ixtz7GSby1E5Osrrayb05pyG8xg/u-qSM6uUL9c.jpg?size=1200x1600&quality=96&sign=6961e05dd563adecc389f1e5490e5f29&type=album)
+
+&ensp;
+---
+&ensp;
+
+![](https://sun9-40.userapi.com/impg/Jjh7JQigrP3v_GJXcFxF5UMI-4yE3309wjZCnw/9qTU-scsXDM.jpg?size=1200x1600&quality=96&sign=a43bb91541fcf56621afca49bc19205d&type=album)
+![](https://sun9-13.userapi.com/impg/KrqhnpDP1t6yWVq1niYcs1q_6wrnnifvhVwvNw/gCyf5bOfBpw.jpg?size=1600x1200&quality=96&sign=9ead967faf4422fb14185d53312f08f6&type=album)
+![](https://sun9-44.userapi.com/impg/uLBgQJCjogul5Y7zweNZ3XJuxH01dNYoUHtAAw/S1ZzVyxY1n4.jpg?size=1200x1600&quality=96&sign=101caf6fe051edb822c46e626ba3ded8&type=album)
+
+&ensp;
+---
+&ensp;
+
+![](https://sun9-19.userapi.com/impg/XHA-1K9qGCd8ldXMtBt2Mp91MI093h-czac5fw/snhEwGUEXew.jpg?size=1200x1600&quality=96&sign=440e5abf8d733b606e34f999c6f3fe28&type=album)
+![](https://sun9-66.userapi.com/impg/lLTZIkINJBIdifsPwEh6J_wmQ3pQbqieRGgO4g/QzahyAXxq_Q.jpg?size=1600x1200&quality=96&sign=ccde24d1b54c37981aa5fea4855505b5&type=album)
+![](https://sun9-51.userapi.com/impg/peUL3kn0fspIVVvLz4IBGtcQlqOYjMsf4SbzXA/YdkG2UQKhks.jpg?size=1200x1600&quality=96&sign=848137405c57a33bed298ffecf43da31&type=album)
+
+&ensp;
+---
+&ensp;
+
+![](https://sun9-52.userapi.com/impg/0Cre2IBoNZMGk48xfT5Ct0j5QO8QfgUZ-3aplw/PJrZoyZP8i4.jpg?size=1200x1600&quality=96&sign=b77bd14b862bb02ed72c9bcd07c70ec7&type=album)
+![](https://sun9-65.userapi.com/impg/0eAT6CVMDz087lqxXyALSO8q0182zdlrXIPMew/CE9D4VI-YLE.jpg?size=1200x1600&quality=96&sign=7b956ea4a9ac26a5f3f2dd47b916a673&type=album)
+![](https://sun9-44.userapi.com/impg/4o8hURSOw2iqwPs0LKflxeJbUTYknF405ERxBA/43KJQI2KbIE.jpg?size=1200x1600&quality=96&sign=3a1dc6dc88dbb0c6552e7d052d824fbb&type=album)
+
+&ensp;
+---
+&ensp;
+
+![](https://sun9-70.userapi.com/impg/I5o1R6dY0hNh-yBskkjxJj4e4Gl0NCPWb72zXg/jfqNGVfUcho.jpg?size=1200x1600&quality=96&sign=65a62663286f1170b78fa33cf4380365&type=album)
+![](https://sun9-29.userapi.com/impg/5YxcT8utepaJ3966IN71JQxv7M1r9lCS6tHH_A/xxd4QlB6zM8.jpg?size=1200x1600&quality=96&sign=9e09c621f266c042ead6db949476f432&type=album)
+![](https://sun9-65.userapi.com/impg/KVvdnPXaoeKuMqF--doC7LvlxBEWaEszE_ySzg/cEY6ty5doMc.jpg?size=1200x1600&quality=96&sign=e97afdc7a7466bb2b796ac24a9ecb11f&type=album)
+
+`;
+
+const stub = `# План
+- [Анализ прежметной области](/#/@subject-area)
+- [Цели и задачи](/#/@purpose)
+- [Архитектура web-приложения](/#/@web-application-architecture)
+- [Структура графического интерфейса](/#/@gui)
+- [Выбор инструментов и технологий](/#/@tools)
+- [Рекомендуемые этапы разработки](/#/@development-stages)
+- [Итерации разработки](/#/@development-iterations)
+- [Описание первой итерации](/#/@first-iter-description)
+- [Вывод](/#/@summary)
+
+&ensp;
+`;
 
 const subjectArea = `# Анализ предметной области
 
@@ -112,8 +186,8 @@ const webApplicationArchitecture = `# Архитектура web-приложе�
 - Возможность замены модулей на сторонние решения
 - Распараллеливание этапов разработки
 
-> Допустим, появится национальный проект по хранению данных школ, API можно заменить как в "frontend" (плохое решение), так и использовать "backend" в качестве прокси (сохраняется единственность источника данных)
-> Возможность создания мобильного приложения
+> - Допустим, появится национальный проект по хранению данных школ, API можно заменить как в "frontend" (плохое решение), так и использовать "backend" в качестве прокси (сохраняется единственность источника данных)
+> - Возможность создания мобильного приложения, данные так же могут браться из backend
 
 &ensp;
 
@@ -128,7 +202,7 @@ const webApplicationArchitecture = `# Архитектура web-приложе�
 
 ## Архитектура frontend
 Применяется компонентный подход
-![Архитектура frontend](https://sun9-47.userapi.com/impg/-DRNggSTERlKcE2rN22B8Za9lJ4j7e4mvdDMdg/MGwPgfHwXXc.jpg?size=821x151&quality=96&sign=3bfb4de8f46d7dfadce73f87c5d73aeb&type=album)
+![Архитектура frontend](https://sun9-49.userapi.com/impg/SZ5kgQUCrGIpnTgUvAoiQSI89OSCqOU545Bxdg/txcs7Mmpp4w.jpg?size=211x631&quality=96&sign=b7f73ef37d978e198697661bf49ff515&type=album)
 
 > На практике, "слой редактирования формата данных" может не понадобиться и тогда стоит отказаться от него и вводить только при необходимости
 
@@ -190,7 +264,7 @@ const gui = `# Структура графического интерфейса
     - Компоненты для компьютеров
     > Происходит выбор компонента на основании режима интерфейса и содержит в себе общую логику
 - Адаптивные компоненты
-    > Приспосабливаются к размерам экрана (например с помощью меди запросов в css)
+    > Приспосабливаются к размерам экрана (например с помощью медиа запросов в css)
 
 &ensp;
 
@@ -235,7 +309,7 @@ const tools = `# Выбор инструментов и технологий
 
 ### Backend - Python Django rest-framework
 >  - Скорость разработки
->  - Ожидается относительно низкая нагрузка на систему (менее 100 пользователей в пиковые часы)
+>  - Ожидается относительно низкая нагрузка на систему (менее 100 пользователей в пиковый час)
 
 &ensp;
 
@@ -249,6 +323,7 @@ const tools = `# Выбор инструментов и технологий
 - [Github Markdown CSS](https://github.com/sindresorhus/github-markdown-css) (стили для статей)
 - [React-router](https://reactrouter.com/)
 - [Axios](https://github.com/axios/axios) (для http запросов)
+- [Figma](https://www.figma.com/) (для создания макетов)
 
 &ensp;
 
@@ -266,7 +341,7 @@ const tools = `# Выбор инструментов и технологий
 &ensp;
 `;
 
-const developmentStages = `# Рекомендованные этапы разработки
+const developmentStages = `# Рекомендуемые этапы разработки
 > при условии что функциональность уже известна:
 
 &ensp;
@@ -326,6 +401,7 @@ const developmentIterations = `# Итерации разработки
 &ensp;
 
 ## Третья итерация:
+- модуль преподавателей
 - модуль событий и мероприятий
 - модуль фотогалереи
 - модуль статей (добавление поиска по содержанию)
@@ -356,6 +432,39 @@ const firstIterDescription = `# Описание модулей первой и�
 - CRUD для персонала
 - Получение контента статьи из списка открытых для просмотра статей по name_link
 
+#### Основной компонент:
+
+    import { Remarkable } from 'remarkable';
+
+    const ArticleMarkdown = (props) => {
+        const md = new Remarkable();
+    
+        const markdownContent = props.content;
+    
+        const getRawMarkup = () => {
+            return { __html: md.render(markdownContent) };
+        }
+    
+        return (
+            <article className="markdown-body" dangerouslySetInnerHTML={getRawMarkup()}/>
+        );
+    }
+    
+##### Онлайн редактор Markdown [Dillinger](https://dillinger.io/)
+##### [Руководство по Markdown](https://paulradzkov.com/2014/markdown_cheatsheet/)
+##### Пример синтаксиса Markdown
+
+    ## Модуль статей Markdown
+    #### Данные:
+    ![](https://sun9-76.userapi.com/impg/JjnYUKw_2T7kPtgD8gWmT3Mc_9A7D4EQbgE1RQ/9YTDbMnx0nI.jpg?size=289x225&quality=96&sign=1f0edb9413a23f8983b357f521b1483a&type=album)
+    
+    > name_link - ограничение на уникальность
+    > status - показывает доступ для конечного пользователя
+    
+    #### Функционал:
+    - CRUD для персонала
+    - Получение контента статьи из списка открытых для просмотра статей по name_link
+
 &ensp;
 
 ## Модуль навигации
@@ -366,9 +475,15 @@ const firstIterDescription = `# Описание модулей первой и�
 - Получение списка элементов навигации с svg иконок
 - Получение списка элементов меню
 
+#### Описание:
+> Navigation выполняй роль первичной навигации, то есть обеспечивает доступ к часто используемым сценариям.
+> Рекомендуется отображать не более 4 таких сценариев.
+
+> Menu реализует обязательные и не часто используемые сценарии.
+
 &ensp;
 
-## Модуль новости
+## Модуль новостей
 #### Данные:
 ![](https://sun9-63.userapi.com/impg/ewwMvBEvlXrzxslKKu-0Wcx7QXlC0XmCTkl2Tw/_-Y3pB7_zgE.jpg?size=286x224&quality=96&sign=f45d2b0736661fe5f588366460aefa51&type=album)
 #### Функционал:
@@ -411,6 +526,7 @@ const summary = `# Резюмирую
 `;
 
 export default {
+    exposition,
     stub,
     subjectArea,
     purpose,

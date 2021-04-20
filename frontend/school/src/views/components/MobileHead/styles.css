@@ -1,5 +1,6 @@
 .mobile-head {
     padding: 45px;
+    padding-bottom: 20px;
 }
 
 @media (max-width: 767px) {

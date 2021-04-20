@@ -22,12 +22,14 @@ const MenuMobile = (props) => {
 
     return (
         <div className="m-menu">
-            <div className="m-menu__head">
-                <MobileHead title="школа 27"/>
+            <div className="m-menu__top">
+                <div className="m-menu__head">
+                    <MobileHead title="школа 27"/>
+                </div>
+                <ul>
+                    {menuLinkList}
+                </ul>
             </div>
-            <ul>
-                {menuLinkList}
-            </ul>
             <div className="m-menu__school-name">Муниципальное бюджетное общеобразовательное учреждение
                 "Средняя общеобразовательная школа № 27" г. Озерск Челябинской области
             </div>

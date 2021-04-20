@@ -19,6 +19,8 @@
 
     --bottom-menu-background-color: #f9f9f9;
     --bottom-menu-shadow: rgba(0, 0, 0, 0.06);
+    --bottom-menu-not-active-color: #99A2AD;
+    --bottom-menu-active-color: #2975CC;
 
     --card-shading-screen-color: rgba(15, 20, 30, 0.4);
     --card-title-color: #fff;

@@ -14,22 +14,49 @@
 }
 
 .bottom-menu__cell {
-    flex: 0 1 auto;
     height: 100%;
     width: 100%;
+    position: relative;
 }
 
-.bottom-menu__cell > a, .bottom-menu__cell > button{
+.bottom-menu > a, .bottom-menu > button{
     height: 100%;
     width: 100%;
-
+    flex: 0 1 auto;
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     background-color: inherit;
 }
 
-.bottom-menu__icon {
-    height: 28px;
-    width: 28px;
+.bottom-menu__cell__name {
+    font-style: normal;
+    font-size: 11px;
+    text-align: center;
+    line-height: 12px;
+
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+
+    color: var(--bottom-menu-not-active-color);
+}
+
+.bottom-menu__cell__icon {
+    width: 100%;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-menu__cell__icon > svg > path{
+    fill: var(--bottom-menu-not-active-color);
+}
+
+.bottom-menu__cell__active .bottom-menu__cell__icon > svg > path,
+.bottom-menu__cell__active .bottom-menu__cell__name{
+    fill: var(--bottom-menu-active-color);
+    color: var(--bottom-menu-active-color);
 }

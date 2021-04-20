@@ -16,7 +16,7 @@ const ButtonHiddenMenu = (props) => {
     const MenuComponent = getComponent();
 
     return (
-        <React.Suspense fallback={<div>Loading</div>}>
+        <React.Suspense fallback={<div/>}>
             <MenuComponent {...props}/>
         </React.Suspense>
     );

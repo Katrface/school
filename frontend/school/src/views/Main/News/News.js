@@ -16,7 +16,7 @@ const News = (props) => {
 
 
     return (
-        <React.Suspense fallback={<div>Loading</div>}>
+        <React.Suspense fallback={<div/>}>
             <NewsComponent {...props}/>
         </React.Suspense>
     );

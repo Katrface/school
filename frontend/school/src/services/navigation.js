@@ -1,8 +1,8 @@
-import {iconLinks} from "../stubs/nav/data"
+import {iconLinks, menuButton} from "../stubs/nav/data"
 
-const getNavigationLinks = () => {
+const getNavigation = () => {
 
-    return iconLinks;
+    return {links: iconLinks, menuCell: menuButton};
 }
 
-export default {getNavigationLinks}
+export default {getNavigation}

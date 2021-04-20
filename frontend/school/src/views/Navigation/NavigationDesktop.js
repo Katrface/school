@@ -3,7 +3,7 @@ import TextLink from "../components/TextLink";
 import container from "../config/container.css";
 
 const NavigationDesktop = (props) => {
-    const links = props.links;
+    const links = props.nav.links;
 
     const navLinks = links.map((linkObj) => {
         return <TextLink key={linkObj.name} link={linkObj} />;

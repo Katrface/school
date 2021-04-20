@@ -10,13 +10,17 @@ import Article from "./Article";
 import styles from "./styles.css";
 import Events from "./Events/Events";
 
+import ScrollToTop from "./ScrollToTop";
+
 const Main = (props) => {
     const adaptiveDesignMode = props.adaptiveDesignMode;
 
     function getRedirectIfMobile() {
-        if (adaptiveDesignMode === AdaptiveDesign.MOBILE) return <Redirect to={staticRouter.news.path}/>;
+        // if (adaptiveDesignMode === AdaptiveDesign.MOBILE)
+            return <Redirect to={staticRouter.news.path}/>;
     }
 
+    //data
     const redirectMainInMobile = getRedirectIfMobile();
     const newsCards = newsServices.getNewsCards();
     const eventCards = eventService.getEventCards();
@@ -30,6 +34,8 @@ const Main = (props) => {
 
     return (
         <div className={mainClassName}>
+            <ScrollToTop/>
+
             <Switch>
                 <Route exact path={staticRouter.main.path}>
                     {redirectMainInMobile}

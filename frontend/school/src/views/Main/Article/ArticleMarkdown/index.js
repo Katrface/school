@@ -10,10 +10,10 @@ const ArticleMarkdown = (props) => {
         return { __html: md.render(markdownContent) };
     }
 
+    // TODO безопасность
     return (
         <article className="markdown-body" dangerouslySetInnerHTML={getRawMarkup()}/>
-    )
-
+    );
 }
 
 export default ArticleMarkdown

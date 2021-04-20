@@ -16,7 +16,7 @@ const Navigation = (props) => {
     const NavigationComponent = getComponent();
 
     return (
-        <React.Suspense fallback={<div>Loading</div>}>
+        <React.Suspense fallback={<div/>}>
             <NavigationComponent {...props} />
         </React.Suspense>
     );
