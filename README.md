@@ -1,6 +1,6 @@
 # CMS для школы
 
-Demo с описание для конференции: https://katrface.github.io/
+Demo с описанием для конференции: https://katrface.github.io/
 
 ### Текущий UI mobile:
 
