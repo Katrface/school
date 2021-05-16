@@ -19,6 +19,7 @@ const NavigationMobile = (props) => {
         return (
             <NavLink
                 onClick={closeMenu}
+                key={linkObj.name}
                 exact to={linkObj.link}
                 isActive={(match, location) => {
                     return !menuViewMode.isOpen && (location.pathname === linkObj.link);

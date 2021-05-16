@@ -2,7 +2,6 @@ import articlesDate from "./articlesDate";
 
 const db = Object.create(null);
 
-db['exposition'] = articlesDate.exposition;
 db['stub'] = articlesDate.stub;
 db['subject-area'] = articlesDate.subjectArea;
 db['purpose'] = articlesDate.purpose;

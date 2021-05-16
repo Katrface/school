@@ -1,7 +1,7 @@
 backend/venv
 backend/get_pip.py
 backend/school/.idea
-
+*/backend
 */package-lock.json
 
 frontend/school-staff
