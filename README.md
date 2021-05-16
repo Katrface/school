@@ -10,11 +10,4 @@ Demo с описанием для конференции: https://katrface.githu
 
 ### Текущий UI desktop:
 
-![](https://sun9-64.userapi.com/impg/TU5766jDO0DkFKKtIdKjgTun43VeYcx_XoqaTw/MJP730ICjrw.jpg?size=1920x1657&quality=96&sign=7b2d4d7d06935193e0dec7d6a209f1c4&type=album)
-
-
-### Ближайшая цель:
-
-#### Переделать навигацию Desktop (поиграться с цветами)
-
-![](https://sun9-6.userapi.com/impg/uJIysdAja5N25UMQ8y4v8BnsXp1UbK_RC0xbVQ/_7JfFA2rJTU.jpg?size=1920x932&quality=96&sign=61c344d300923dc2076c7d7f3f8feb75&type=album)
+![](https://sun9-63.userapi.com/impg/ZUvLGa7oKkGarReNhp1an14OZkuNPPKS2Nu9tg/_JwvY9TjQg4.jpg?size=1920x1493&quality=96&sign=51924e8ff2eeaa2561eacad5c154ee34&type=album)
